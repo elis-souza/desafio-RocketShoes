@@ -36,16 +36,6 @@ body {
     padding: 0.5rem 1rem;
 }
 
-/* .logoTop:nth-child(1) {
-    width: 10%;
-}
-.menuSection:nth-child(2) {
-    width: 60%;
-}
-.icoShop:nth-child(3) {
-    width: 10%;
-} */
-
 .logoTop {
     padding-left: 15px;
 }
@@ -198,7 +188,6 @@ nav .links-nav ul li input::placeholder {
 .itemAll img {
     margin: 1rem;
 }
-
 
 
 /* Menu footer */
