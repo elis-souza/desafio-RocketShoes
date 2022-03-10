@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --button: #FF0000;
+    --main-background:  #C4C4C4;
+    --background: #E5E5E5;
+    --text: #000;
+    --footer: #000;
+    --text-description: #9C9696;
+  }
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #E5E5E5;
+    background-image: linear-gradient(90deg, #E5E5E5 38%, 0%, #C4C4C4 50%);
+}
+
+.mainNav {
+    position: relative;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+}
+
+/* .logoTop:nth-child(1) {
+    width: 10%;
+}
+.menuSection:nth-child(2) {
+    width: 60%;
+}
+.icoShop:nth-child(3) {
+    width: 10%;
+} */
+
+.logoTop {
+    padding-left: 15px;
+}
+
+nav .links-nav {
+    padding: 2rem;
+}
+
+nav .links-nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 8.5rem;
+}
+
+nav .links-nav ul li a {
+    color:#000;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav .links-nav ul li a:hover{
+    color: #FF0000;
+    transition: 0.2s;
+}
+
+nav .links-nav ul li input {
+    background-color: #FFF;
+    outline: none;
+    width: 220px;
+    height: 45px;
+}
+
+nav .links-nav ul li input[type="search"] {
+    padding: 0 1rem 0 2.5rem!important;
+}
+
+
+nav .links-nav ul li input::selection {
+    background-color: #FF0000;
+    color: #FFF;
+
+}
+
+nav .links-nav ul li input::placeholder {
+    color: #9C9696;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.ico-search img {
+    position: relative;
+    left: 33px;
+    top: 9px;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem;
+}
+
+.descriptionItem {
+    width: 357px;
+    height: 533px;
+    margin: 3rem;
+}
+
+.descriptionItem h1 {
+    color: #000;
+    font-size: 60px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.descriptionItem span {
+    color: #9C9696;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.price {
+    padding: 1rem 0;
+}
+
+.price span {
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+
+.descriptionItem button {
+    width: 274px;
+    height: 90px;
+    background-color: #FF0000;
+    cursor: pointer;
+}
+
+.descriptionItem button:hover {
+    background-color: #000;
+    color: #FFF;
+}
+
+.descriptionItem button a {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.itemSelected { 
+    position: absolute;
+    top: 0;
+    width: 490px;
+    left: 920px;
+    height: 100vh;
+}
+.itemActive {
+    display: flex;
+}
+
+.itemActive img {
+    -webkit-box-reflect: below -200px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.0), rgba(0,0,0,0.1));
+}
+
+.galleryContainer {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    padding-top: 100px;
+}
+
+.itemAll {
+    position: absolute;
+    padding-top: 450px;
+    display: flex;
+    flex-direction: row;
+}
+
+.itemAll .item-1 {
+    padding-left: 1.5rem;
+}
+
+.itemAll img {
+    margin: 1rem;
+}
+
+
+
+/* Menu footer */
+.menuFooter {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    background-color: #E5E5E5;
+    bottom: 0!important;
+    top: 55px;
+}
+
+.videoPic img {
+    width: 100%;
+}
+
+.social {
+    padding: 0 2rem;
+}
+
+.social ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 8.5rem;
+}
+
+.social ul li a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.social ul li a:hover {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+
+.buttonEx button {
+    background-color: #000;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 437px;
+    height: 170px;
+    cursor: pointer;
+}
+
+.buttonEx button:hover {
+    background-color: #FF0000;
+    color: #FFF;
+}
+
